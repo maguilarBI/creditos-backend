@@ -3,10 +3,11 @@ from psycopg2 import pool
 
 # Configuración de la conexión
 DB_CONFIG = {
-    "host": "localhost",
+    "host": "172.31.0.19",
     "database": "bd_app_pm",
     "user": "admin",
-    "password": "87654321"
+    "password": "87654321",
+    'port': 5432
 }
 
 # Pool de conexiones

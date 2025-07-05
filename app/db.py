@@ -6,7 +6,7 @@ DB_CONFIG = {
     "host": "172.31.0.19",
     "database": "bd_app_pm",
     "user": "admin",
-    "password": "87654321",
+    "password": "654321",
     'port': 5432
 }
 

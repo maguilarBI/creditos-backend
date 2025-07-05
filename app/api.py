@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
-from .db import get_connection, return_connection
-from .models import Cliente, Evaluacion
+from app.db import get_connection, return_connection
+from app.models import Cliente, Evaluacion
 import requests
 import random
 from datetime import datetime

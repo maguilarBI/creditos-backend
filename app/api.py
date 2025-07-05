@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS  # <-- Añade esta línea
 from app.db import get_connection, return_connection
 from app.models import Cliente, Evaluacion
 import requests
@@ -6,6 +7,7 @@ import random
 from datetime import datetime
 
 app = Flask(__name__)
+CORS(app)  # <-- Añade esta línea para habilitar CORS para todos los dominios
 
 # Mock de servicio externo (simula respuesta crediticia)
 def mock_servicio_externo(dni):
